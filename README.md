@@ -38,10 +38,14 @@ go run .
 curl http://localhost:8080
 ```
 
+```bash
+curl --location 'http://localhost:8080'
+```
+
 Curl with body:
 
 ```bash
-curl --location --request GET 'http://localhost:8080/' \
+curl --location 'http://localhost:8080/user' \
 --header 'Content-Type: application/json' \
 --data '{
     "name": "David",
