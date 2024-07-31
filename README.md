@@ -38,6 +38,17 @@ go run .
 curl http://localhost:8080
 ```
 
+Curl with body:
+
+```bash
+curl --location --request GET 'http://localhost:8080/' \
+--header 'Content-Type: application/json' \
+--data '{
+    "name": "David",
+    "age": 29
+}'
+```
+
 ---
 
 ### HTTP Client:
@@ -51,4 +62,4 @@ go run .
 
 ### Related links:
 
--   [Digital Ocean](https://www.digitalocean.com/community/tutorials/how-to-make-an-http-server-in-go#prerequisites)
+-   [Digital Ocean HTTP server](https://www.digitalocean.com/community/tutorials/how-to-make-an-http-server-in-go#prerequisites)
